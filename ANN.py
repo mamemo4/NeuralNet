@@ -82,7 +82,7 @@ NN = Sequential()
 NN.add(Dense(output_dim = 2, init = 'uniform', activation = 'relu', input_dim = 3))
 
 # Second hidden layer
-NN.add(Dense(output_dim = 1), init = 'uniform', activation = 'relu')
+NN.add(Dense(output_dim = 1, init = 'uniform', activation = 'relu'))
 
 # training the NN
 NN.compile(optimizer = 'adam', loss = 'mean_squared_error', metrics = ['accuracy'])
