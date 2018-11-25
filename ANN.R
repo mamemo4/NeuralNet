@@ -33,3 +33,5 @@ pred <- h2o.predict(NN, newdata = as.h2o(test_set[-4]))
 pred <- as.vector(pred)
 
 
+# Table showing the differences in test data outcomes
+cm <- matrix(c(test_set[,4], pred), nrow = 6574, ncol = 2)
